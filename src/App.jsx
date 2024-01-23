@@ -36,7 +36,7 @@ function App() {
   }, [notes]);
 
   return (
-    <div>
+    <div className='app_main'>
       <div className='header'>
         
         <img className='lionIMG' src={lion} />
@@ -44,8 +44,8 @@ function App() {
         <img className='policeIMG' src={police} />
 
       </div>
-      <div style={{ width: "100%" }}>
-        <div style={{ float: "right" }}>
+      <div className='zoomin_zoomout_main'>
+        <div className='zoomin_zoomout_button' style={{ float: "right" }}>
           <button onClick={zoomInClick}>
             <img src={zoomPlus} alt="Button Image" style={{ width: "100%", height: "70%" }} />
           </button>
@@ -55,7 +55,7 @@ function App() {
         </div>
       </div>
 
-      <div style={{ float: "left", width: "100%" }} className='middleContent'>
+      <div style={{ float: "right", width: "100%" }} className='middleContent'>
         {notes.map((noteItem, index) => {
           return (
             <Display key={index} id={index} question={noteItem.question} answer={noteItem.answer} zoomInValue={zoomInValue} />

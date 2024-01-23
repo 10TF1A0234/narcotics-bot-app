@@ -1,8 +1,8 @@
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  background-color: #B9D9EB;
+  justify-content: left;
+  background-color: lightskyblue;
   position: sticky;
   top: 0;
   height: 100px;
@@ -20,16 +20,28 @@
   height: 30px;
   margin-top: 30px;
   text-align: left;
+  background: transparent;
 }
 
 .policeIMG {
   height: fit-content;
   width: 8%;
+  background: transparent;
+}
+
+.zoomin_zoomout_main {
+  width: 100px;
+  float: right;
+}
+
+.zoomin_zoomout_button {
+  display: flex;
 }
 
 .middleContent {
   height: 64vh;
   overflow-y: scroll;
+  padding-left: 50%;
 }
 
 
@@ -203,7 +215,9 @@ p {
   border: 2px dashed #555;
   color: #444;
   cursor: pointer;
-  transition: background .2s ease-in-out, border .2s ease-in-out;
+  background: lightblue;
+  border: 2px solid darkblue;
+  /* transition:backg background .2s ease-in-out, border .2s ease-in-out; */
 }
 
 .drop-container:hover {

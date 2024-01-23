@@ -42,7 +42,7 @@ function Content(props) {
       const formData = new FormData();
       formData.append("prompt", note.question);
 
-      const response = await fetch("http://127.0.0.1:8000/output/", {
+      const response = await fetch("http://10.0.8.19:8003/output/", {
         method: "POST",
         body: formData,
       });
